@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор курса</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+
+    <h1>Курс по обучению бизнесу</h1>
+
+    <form id="orderForm">
+        <label for="quantity">Срок обучения в месяцах:</label>
+        <input type="text" id="quantity" name="quantity" required>
+        <br><br>
+
+        <label for="product">Выберите курс:</label>
+        <select id="product" name="product">
+            <option value="5000">Стандарт(5000 руб/мес)</option>
+            <option value="6500">Стандарт + (6500 руб/мес)</option>
+            <option value="9000">VIP (9000 руб/мес)</option>
+            <option value="12000">VIP + (12000 руб/мес)</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Посчитать</button>
+    </form>
+
+    <h2 id="result"></h2>
+
+</body>
+</html>
